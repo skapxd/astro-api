@@ -4,6 +4,6 @@ export const prerender = false;
 // Outputs: /builtwith.json
 export async function GET(props: any) {
   console.log({ props });
-
-  return new Response("Hello, world!");
+  const random = Math.random();
+  return new Response(`Hello, world! ${random}`);
 }
